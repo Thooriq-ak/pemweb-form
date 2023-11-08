@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form data pegawai</title>
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      .navbar {
+        background-color: black;
+        padding: 20px 100px;
+        margin-bottom: 30px;
+    }
+      .navbar a {
+        color: #aaa;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      .navbar a h4 {
+        display: inline;
+      }
+      h3{
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 100; 
+     }
+      .form {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    table{
+        padding: 2px;
+    }
+    td{
+        padding: 7px;
+        vertical-align: top;
+    }
+    label{
+        display: block;
+        text-align: end;
+        font-size: 13px;
+    }
+    .btn{
+        padding: 10px;
+        border-radius: 7px;
+        border: 0;
+        color:#fff
+    }
+    .btn-red{
+        background-color: #ee7770;
+    }
+    .btn-blue{
+        background-color: #33aabb;
+    }
+    input, select{
+        height: 23px;
+    }
+    input, select,textarea{
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    h4{
+        font-weight: 100;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="">
+        <h4>Data Karyawan</h4>
+      </a>
+      <a href="">Master Data</a>
+      <a href="">Tambah Data</a>
+    </div>
+
+    <h3>FORM ENTRY DATA PEGAWAI</h3>
+
+    <form>
+    <table class="form">
+      <tr>
+        <td><label for="nik">NIK</label></td>
+        <td><input type="number" name="nik" id="nik" /></td>
+      </tr>
+      <tr>
+        <td><label for="name">Name</label></td>
+        <td><input type="text" name="name" id="name" /></td>
+      </tr>
+      <tr>
+        <td><label for="tempatLahir">Tempat Lahir</label></td>
+        <td><input type="text" name="tempatLahir" id="tempatLahir" /></td>
+      </tr>
+      </tr>
+      <tr>
+        <td><label for="tglLahir">Tanggal Lahir</label></td>
+        <td><input type="date" name="tglLahir" id="tglLahir" /></td>
+      </tr>
+      <tr>
+        <td><label for="alamat">Alamat</label></td>
+        <td><textarea type="text" name="alamat" id="alamat" cols="30" rows="3"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="telp">No Telepon</label></td>
+        <td><input type="number" name="telp" id="telp" /></td>
+      </tr>
+      <tr>
+        <td><label for="jabatan">Jabatan</label></td>
+        <td><select id="jabatan" name="jabatan">
+            <option value="">Jabatan Terbaru</option>
+            <option value="CEO">CEO</option>
+            <option value="CTO">CTO</option>
+            <option value="PM">Product Manager</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><label for="status">Status</label></td>
+        <td><select id="status" name="status">
+            <option value="">Status Terbaru</option>
+            <option value="Magang">Magang</option>
+            <option value="Kontrak">Kontrak</option>
+            <option value="Tetap">Tetap</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button class="btn btn-blue" type="submit" >Simpan</button>
+            <button class="btn btn-red" type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+</form>
+  </body>
+</html>
